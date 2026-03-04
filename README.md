@@ -489,3 +489,20 @@ Uso excessivo de `System.out.println`.
 | Segurança         | Crítica (no segundo serviço) |
 | Testabilidade     | Moderada/Baixa |
 | Escalabilidade    | Comprometida |
+
+---
+
+## Isaac
+
+### AnaliseCreditoService
+- Método longo;
+- Valores mágicos são usados nas linhas 24 e 36 em vez de enums;
+- Código "duplicado" na linha 25 e 37, são feitas validações similares com as mesmas variáveis;
+- Forte acoplamento com os diversos ifs;
+- Acoplamento com logs sendo realizados usando diretamente a dependência, o que se fosse evoluir pra outro logger atrapalharia;
+- Complexidade 8 (7 ifs, 1 else ifs);
+
+### ProcessadorVendaService
+- Valores mágicos são usados nas linhas 18 e 20 em vez de enums;
+- Valores mágicos são usados nas linhas 28 e 30 em vez de enums;
+- Complexidade 6 (4 ifs, 2 else ifs);
