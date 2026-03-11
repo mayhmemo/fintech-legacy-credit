@@ -16,11 +16,6 @@ public class AnaliseStrategyPJ implements AnaliseStrategy {
     private static final double LIMITE_ALTO_VALOR = 50000.0;
 
     @Override
-    public boolean elegivel(SolicitacaoCreditoRequest solicitacao) {
-        return TipoConta.PJ == solicitacao.tipoConta();
-    }
-
-    @Override
     public boolean analisar(SolicitacaoCreditoRequest solicitacao) {
         if (solicitacao.negativado()) {
             log.warn("Reprovado PJ: cliente negativado");

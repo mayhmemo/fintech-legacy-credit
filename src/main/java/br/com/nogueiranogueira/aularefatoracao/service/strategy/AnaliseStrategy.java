@@ -4,7 +4,5 @@ import br.com.nogueiranogueira.aularefatoracao.model.dto.SolicitacaoCreditoReque
 
 public interface AnaliseStrategy {
 
-    boolean elegivel(SolicitacaoCreditoRequest solicitacao);
-
     boolean analisar(SolicitacaoCreditoRequest solicitacao);
 }
