@@ -1,7 +1,8 @@
 package br.com.nogueiranogueira.aularefatoracao.controller;
 
-import br.com.nogueiranogueira.aularefatoracao.model.dto.SolicitacaoCreditoRequest;
+import br.com.nogueiranogueira.aularefatoracao.dto.SolicitacaoCreditoRequest;
 import br.com.nogueiranogueira.aularefatoracao.service.AnaliseCreditoService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
