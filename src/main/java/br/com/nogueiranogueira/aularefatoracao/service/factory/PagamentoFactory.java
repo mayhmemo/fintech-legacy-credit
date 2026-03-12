@@ -15,6 +15,7 @@ public class PagamentoFactory {
             case CARTAO_CREDITO -> new CartaoCreditoStrategy();
             case PAYPAL -> new PaypalStrategy();
             case BOLETO -> new BoletoStrategy();
+            default -> throw new IllegalArgumentException("Tipo de conta não suportado: " + metodo);
         };
     }
 }
